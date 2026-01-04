@@ -5,6 +5,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 
+import utils.ConfigReader;
+
 
 public class BaseTest {
 	
@@ -13,7 +15,7 @@ public class BaseTest {
 	public void lunchBroweser() {
 	driver = new ChromeDriver();
 	driver.manage().window().maximize();
-	driver.get("https://demoqa.com/");
+	driver.get(ConfigReader.get("baseURL"));
 	
 	}
 	

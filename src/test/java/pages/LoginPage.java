@@ -27,9 +27,9 @@ public class LoginPage extends BasePage{
 		click(textBoxlbl);
 	}
 	
-	public void fillForm() {
-		type(txtfirstname, "Srikanth");
-		type(txtEmail, "Srikanth@gmail.com");
+	public void fillForm(String firstname, String email) {
+		type(txtfirstname, firstname);
+		type(txtEmail, email);
 		click(btnSubmit);
 	}
 	
